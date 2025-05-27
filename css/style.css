@@ -1,0 +1,322 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling - Light Mode */
+body {
+    font-family: 'UnifrakturCook', cursive, sans-serif;
+    background-color: #f2f2f2;
+    color: #111;
+    line-height: 1.6;
+    font-size: 16px;
+    text-align: center; /* Center all body text */
+}
+
+/* Header Styling */
+header {
+    background-color: #fff;
+    border-bottom: 3px solid #cc0000;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'UnifrakturCook', cursive;
+    text-shadow: 1px 1px 2px #ccc;
+}
+
+header nav ul li a:hover {
+    color: #cc0000;
+}
+
+/* Section Headers */
+h1, h2, h3 {
+    font-family: 'Rock Salt', cursive;
+    color: #cc0000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px #ccc;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Paragraph Styling */
+p {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #cc0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer - Fixed, Light Version */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #111;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-top: 3px solid #cc0000;
+    z-index: 1000;
+}
+
+footer p {
+    margin: 0;
+    color: #cc0000;
+    text-shadow: 1px 1px 2px #999;
+}
+
+/* Buttons */
+button {
+    background-color: #cc0000;
+    color: #fff;
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 1rem;
+    border: 2px solid #cc0000;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #990000;
+}
+
+/* Contact Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: left; /* Keep forms left-aligned inside center section */
+}
+
+/* Input and Textarea */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'UnifrakturCook', cursive;
+    background-color: #f9f9f9;
+    color: #111;
+}
+
+/* Labels */
+form label {
+    font-weight: bold;
+    font-family: 'Rock Salt', cursive;
+    color: #cc0000;
+    margin-bottom: 5px;
+}
+
+/* Submit Button in Form */
+form button {
+    background-color: #cc0000;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #990000;
+}
+
+/* FAQ */
+.faq {
+    background-color: #f8f8f8;
+    border-left: 4px solid #cc0000;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* Center FAQ Text */
+.faq h3,
+.faq p {
+    text-align: center;
+}
+
+/* Gallery */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem;
+}
+
+.gallery-item img {
+    max-width: 80%; /* Makes the images smaller */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease; /* Optional: adds zoom effect */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Optional: zoom effect on hover */
+}
+
+/* Center All Sections */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Center Lists in Sections */
+section ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem auto;
+    display: inline-block;
+    text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header nav ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .gallery-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Carousel Section */
+#carousel {
+    margin: 2rem auto;
+    max-width: 800px;
+    position: relative;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: #cc0000;
+    font-weight: bold;
+    font-size: 24px;
+    user-select: none;
+    transition: 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.prev:hover, .next:hover {
+    background-color: #cc0000;
+    color: white;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
