@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iron Axe Guitars - Custom Guitars for Metalheads.">
+    <title>Iron Axe Guitars</title>
+
+    <!-- Google Fonts for Metal Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <!-- Your style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="mission-vision.html">Mission & Vision</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="news-blog.html">Blog</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="web-designer-profile.html">Web Designer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to the Ultimate Guitar Experience</h1>
+            <p>Custom guitars built to suit your style and sound</p>
+        </section>
+
+        <section id="carousel">
+    <div class="carousel-container">
+        <div class="carousel-slide fade">
+            <img src="Voodoo-Home-Background-1-NEW-RESIZED-MetalGATE.jpg" alt="Custom Guitar 1">
+        </div>
+        <div class="carousel-slide fade">
+            <img src="Voodoo-Home-Custom-Control.jpg" alt="Custom Guitar 2">
+        </div>
+        <div class="carousel-slide fade">
+            <img src="Voodoo-Home-Background-3-Bass-NEW-RESIZED.jpg" alt="Custom Guitar 3">
+        </div>
+
+        <!-- Navigation arrows -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+</section>
+
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Guitar Business | Designed by Darrel Guiam</p>
+    </footer>
+    <script>
+let slideIndex = 0;
+let slides = document.getElementsByClassName("carousel-slide");
+showSlides();
+
+function plusSlides(n) {
+    slideIndex += n;
+    showSlides(true); // manual override
+}
+
+function showSlides(manual = false) {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+    if (slideIndex < 1) { slideIndex = slides.length; }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    // Only set timeout if not manually triggered
+    if (!manual) {
+        setTimeout(showSlides, 3000); // Slower: 6 seconds
+    }
+}
+</script>
+
+
+</body>
+</html>
