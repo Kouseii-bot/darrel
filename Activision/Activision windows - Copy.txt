@@ -1,0 +1,4 @@
+1. win + x
+2. press a
+3. put: irm https://get.activated.win | iex
+4. press 1
